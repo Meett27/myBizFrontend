@@ -7,3 +7,13 @@
 main {
   flex: 1;
 }
+
+.sticky-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050; /* Make sure it's above other content */
+  width: auto;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(177, 11, 11, 0.1);
+}

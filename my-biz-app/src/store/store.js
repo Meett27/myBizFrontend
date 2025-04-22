@@ -1,8 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
+import {thunk} from 'redux-thunk';
+import productReducer from '../reducers/productReducer';
 
 
 export default configureStore({
   reducer: {
-    // category: TourReducer,
+    products: productReducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(thunk),
 });
