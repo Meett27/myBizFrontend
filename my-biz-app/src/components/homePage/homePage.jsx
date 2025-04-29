@@ -1,7 +1,6 @@
 // HomePage
 import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
-import CategoryList from '../categoryComponent/categoryList';
 const Home = () => {
     return (
         <>

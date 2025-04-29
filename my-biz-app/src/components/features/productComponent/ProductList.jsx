@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProducts, deleteProduct } from './productAction';
-import AddProductModal from './addProductModal';
+import { getProducts, deleteProduct } from './ProductAction';
+import ProductModal from './ProductModal';
 
 const ProductList = () => {
   const dispatch = useDispatch();
@@ -63,7 +63,7 @@ const ProductList = () => {
       </Table>
 
       {/* Add Product Modal */}
-      <AddProductModal
+      <ProductModal
         show={showModal}
         handleClose={handleClose}
         currentProduct={currentProduct}

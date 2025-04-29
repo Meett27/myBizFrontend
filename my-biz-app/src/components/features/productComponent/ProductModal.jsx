@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Button, Modal, Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { createNewProduct, updateExistingProduct } from './productAction';
+import { createNewProduct, updateExistingProduct } from './ProductAction';
 
-const AddProductModal = ({ show, handleClose, currentProduct }) => {
+const ProductModal = ({ show, handleClose, currentProduct }) => {
     const dispatch = useDispatch();
     const [formData, setFormData] = useState({
         ProductName: '',
@@ -234,4 +234,4 @@ const AddProductModal = ({ show, handleClose, currentProduct }) => {
     );
 };
 
-export default AddProductModal;
+export default ProductModal;

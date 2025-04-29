@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Route, Routes, Link } from "react-router-dom";
 import Home from './components/homePage/homePage';
-import CategoryList from './components/categoryComponent/categoryList';
-import ProductList from './components/features/productComponent/product';
-import Supplier from './components/supplierComponent/supplier';
+import CategoryList from './components/features/categoryComponent/CategoryList';
+import ProductList from './components/features/productComponent/ProductList';
+import Supplier from './components/features/supplierComponent/supplier';
 import TopNavbar from './components/utils/navbar';
 import Profile from './components/profileComponent/userProfile';
 

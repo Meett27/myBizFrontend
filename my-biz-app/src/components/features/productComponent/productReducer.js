@@ -1,4 +1,4 @@
-import { GET_PRODUCTS, CREATE_PRODUCT, UPDATE_PRODUCT, DELETE_PRODUCT } from './productAction';
+import { GET_PRODUCTS, CREATE_PRODUCT, UPDATE_PRODUCT, DELETE_PRODUCT } from './ProductAction';
 
 const initialState = {
     products: []
