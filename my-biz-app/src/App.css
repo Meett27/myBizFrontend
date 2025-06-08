@@ -1,19 +1,9 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-.sticky-alert {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1050; /* Make sure it's above other content */
-  width: auto;
-  max-width: 400px;
-  box-shadow: 0 4px 6px rgba(177, 11, 11, 0.1);
+/* You can add any global styles here, for example: */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

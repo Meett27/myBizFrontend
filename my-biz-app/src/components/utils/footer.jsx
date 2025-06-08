@@ -1,11 +1,14 @@
 import React from 'react';
-import './Footer.css';
+import { Container } from 'react-bootstrap';
+import './footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p>© 2024 Your Company Name. All rights reserved.</p>
-    </footer>
+    <footer className="app-footer ">
+            <Container fluid className='footer-text'>
+                <p className="mb-0">&copy; {new Date().getFullYear()} Your Company Name. All Rights Reserved.</p>
+            </Container>
+        </footer>
   );
 };
 

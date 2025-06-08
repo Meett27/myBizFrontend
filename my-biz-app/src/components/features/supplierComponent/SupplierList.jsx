@@ -17,6 +17,7 @@ const SupplierList = () => {
   }, [dispatch]);
 
   const handleShow = (supplier = null) => {
+    console.log(supplier, "supplier from handleShow");
     setCurrentSupplier(supplier);
     setShowModal(true);
   };
@@ -54,18 +55,18 @@ const SupplierList = () => {
               <td>{supplier.ContactLname}</td>
               <td>{supplier.CompanyName}</td>
               <td>{supplier.Address}</td>
-              <td>{supplier.Title}</td>
+              <td>{supplier.ContactTitle}</td>
               <td>{supplier.Email}</td>
               <td>{supplier.Phone}</td>
               <td>
-                <Button variant="primary" onClick={() => handleShow(supplier)}>Edit</Button>{' '}
+                <Button variant="primary" onClick={() => handleShow(supplier)}>Edit</Button>
                 <Button variant="danger" onClick={() => handleDelete(supplier.SupplierID)}>Delete</Button>
               </td>
             </tr>
           ))}
         </tbody>
       </Table>
-      <SupplierModal show={showModal} onHide={handleClose} supplier={currentSupplier} />
+      <SupplierModal show={showModal} handleClose={handleClose} supplier={currentSupplier} />
     </div>
   );
 };

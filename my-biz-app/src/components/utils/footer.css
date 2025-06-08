@@ -1,10 +1,16 @@
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+.app-footer {
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
