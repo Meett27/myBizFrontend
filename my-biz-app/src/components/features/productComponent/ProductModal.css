@@ -1,0 +1,109 @@
+/* --- Modal Overlay --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* --- Modal Container --- */
+.modal-container {
+    background-color: #1F2937; /* Dark gray */
+    color: #F9FAFB; /* Light gray text */
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Modal Header --- */
+.modal-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #9CA3AF;
+    cursor: pointer;
+}
+.close-button:hover {
+    color: white;
+}
+
+/* --- Modal Body & Form --- */
+.modal-body {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #D1D5DB;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #374151;
+    border: 1px solid #4B5563;
+    border-radius: 6px;
+    color: white;
+    box-sizing: border-box; /* Important for padding and width */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2563EB; /* Blue */
+    box-shadow: 0 0 0 2px #1e40af;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+/* --- Form Actions --- */
+.form-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.btn-secondary {
+    background-color: #4B5563; /* Gray */
+}
+.btn-secondary:hover {
+    background-color: #6B7280;
+}
